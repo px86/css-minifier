@@ -1,0 +1,33 @@
+/*
+  Don't look, you will hurt your eye.
+  It's horrible.
+*/
+
+
+
+    :root      {
+    margin:     0;
+     padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+
+    --font-serif:
+	'Noto Serif', serif;
+    --font-sans-serif: 'Lato',
+		       sans-serif;
+    --font-monospace:  'Fantasque Sans Mono', monospace;
+
+
+
+  }
+
+body    ul     li   > a  {
+    background: var(--color-dark-primary);
+    color: #ffffff;
+    font-family: var(--font-sans-serif);
+    min-height: 100vh;
+    margin-left: 30ch;
+
+
+    border :  0   0   10px black ;
+}

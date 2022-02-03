@@ -1,0 +1,25 @@
+#+TITLE: Minify - A CSS minifier
+#+AUTHOR: Pushkar Raj
+#+DATE: [2022-02-03 Thu]
+
+Remove comments and unnecessary whitespaces from a CSS file.
+
+* Compilation
+
+It's very simple.
+
+#+begin_src shell
+  g++ -std=c++11 -o minify minify.cpp
+#+end_src
+
+or, if you have =GNU Make= installed, run =make= to compile the program, and =make test= for running the program on the =example.css= file.
+
+#+begin_src shell
+  make test
+#+end_src
+
+* Usage
+
+#+begin_src shell
+  minify <path-to-a-css-file> <ouput-file-path>
+#+end_src
