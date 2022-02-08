@@ -92,8 +92,9 @@ auto minify(const std::string& css) -> std::string {
 	  } break;
 	case '/' :
 	  {
-	    // Consume the comment.
-	    if (css.at(++i) == '*') {
+	    if (css.at(i+1) == '*') {
+	      // Consume the comment.
+	      ++i;
 	      while (!(css.at(++i) == '*' && css.at(++i) == '/')) {}
 	    }
 	    else minicss += '/';
